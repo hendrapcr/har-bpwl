@@ -2,16 +2,15 @@
 	
 	session_start();
 	include 'proses/config.php';
-    $user = $_SESSION['nama'];
-	if(!$user){
+    
+	if(!isset($_SESSION['nama'])){
         $_SESSION['nama'] = '';
+        
     }
     else {
         $nama = $_SESSION['nama'];
     }
-
-
-
+        
 
  ?>
 <!doctype html>
@@ -127,7 +126,7 @@
                     <div class="collapse navbar-collapse" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#home">Home</a></li>                    
-                            <li><a href="about.php">About</a></li>
+                            <li><a href="komentar.php">Forum</a></li>
                             <li><a href="#">Store</a></li>
 
                             <?php if(!$_SESSION['nama']): ?>
