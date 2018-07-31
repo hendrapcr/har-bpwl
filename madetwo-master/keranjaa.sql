@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 30 Jul 2018 pada 22.06
--- Versi server: 10.1.32-MariaDB
--- Versi PHP: 7.2.5
+-- Generation Time: Jul 31, 2018 at 04:40 AM
+-- Server version: 10.1.32-MariaDB
+-- PHP Version: 7.2.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,28 +25,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `chat`
+-- Table structure for table `jual`
 --
 
-CREATE TABLE `chat` (
-  `id` int(11) NOT NULL,
-  `nama_user` varchar(25) NOT NULL,
-  `isi` varchar(100) NOT NULL,
-  `tanggal` varchar(20) NOT NULL
+CREATE TABLE `jual` (
+  `id_jual` int(11) NOT NULL,
+  `nama_barang` varchar(100) NOT NULL,
+  `harga` int(11) NOT NULL,
+  `jumlah` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `chat`
+-- Dumping data for table `jual`
 --
 
-INSERT INTO `chat` (`id`, `nama_user`, `isi`, `tanggal`) VALUES
-(1, 'Reyhan', 'Tes', '01-January-2019'),
-(2, 'Algi', 'Tes kedua om', '01-January-2019');
+INSERT INTO `jual` (`id_jual`, `nama_barang`, `harga`, `jumlah`) VALUES
+(1, 'Televisi', 1250000, 37),
+(2, 'Laptop', 6500000, 27),
+(3, 'Kulkas', 2500000, 58),
+(4, 'Kipas Angin', 700000, 79);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -59,7 +61,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `nama`, `email`, `username`, `password`, `noHp`) VALUES
@@ -72,29 +74,29 @@ INSERT INTO `user` (`id`, `nama`, `email`, `username`, `password`, `noHp`) VALUE
 --
 
 --
--- Indeks untuk tabel `chat`
+-- Indexes for table `jual`
 --
-ALTER TABLE `chat`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `jual`
+  ADD PRIMARY KEY (`id_jual`);
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `chat`
+-- AUTO_INCREMENT for table `jual`
 --
-ALTER TABLE `chat`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `jual`
+  MODIFY `id_jual` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT untuk tabel `user`
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
