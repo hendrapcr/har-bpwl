@@ -1,9 +1,6 @@
 <?php
 //koneksi ke database
-$conn = new mysqli("localhost", "root", "", "keranjaa");
-if ($conn->connect_errno) {
-    echo die("Failed to connect to MySQL: " . $conn->connect_error);
-}
+include "config.php";
 
 $rows = array();
 $table = array();
@@ -15,7 +12,7 @@ $table['cols'] = array(
 );
 
 //melakukan query ke database select
-$sql = $conn->query("SELECT * FROM jual");
+$sql = $connection->query("SELECT * FROM jual");
 //perulangan untuk menampilkan data dari database
 while($data = $sql->fetch_assoc()){
 	//membuat array
@@ -44,7 +41,7 @@ $jsonTable = json_encode($table);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title>Grafik Penjualan</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -91,10 +88,10 @@ $jsonTable = json_encode($table);
                     </a>
                 </li>
                 <li>
-                    <a href="index.html">Dashboard</a>
+                    <a href="index.php">Dashboard</a>
                 </li>
                 <li>
-                    <a href="#">Tabel Penjualan</a>
+                    <a href="tabel.php">Tabel Penjualan</a>
                 </li>
                 <li>
                     <a href="penjualan.php">Grafik Penjualan</a>
