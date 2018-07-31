@@ -682,7 +682,7 @@ textarea::-ms-input-placeholder{
 
 /*for image bg*/
 /*.img-bg{
-  background: url(../images/home-msg.jpg) no-repeat center top fixed;
+  background: url(../images/home.jpg) no-repeat center top fixed;
   background-size
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -998,7 +998,7 @@ Featured section style
 /*Business Section*/
 
 .business{
-    background: url(../images/business-bg.jpg) no-repeat top center;
+    background: url(../images/barang.png) no-repeat top center;
     background-size: cover;
     position: relative;
 }
@@ -1207,7 +1207,7 @@ work Section style
 /*Test Section
 ======================*/
 .test{
-    background: url(../images/test-bg.jpg) no-repeat top center;
+    background: url(../images/TESTIMONI.png) no-repeat top center;
     background-size: cover;
     position: relative;
 }
