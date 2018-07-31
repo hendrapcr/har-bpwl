@@ -174,7 +174,7 @@
 										</a>
 									</div>
 									<div class="col-md-6">
-										<a class="btn btn-sm btn-info" style="width: 100%;">
+										<a class="btn btn-sm btn-info" href="login-google/auth.php" style="width: 100%;">
 											<span class="pull-left" style="margin-top: 6px; margin-left: 25%">Or Login With</span>
 											<span class="pull-right fa fa-google-plus" style="font-size: 20pt; margin-right: 25%"></span>
 										</a>
