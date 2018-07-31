@@ -161,7 +161,7 @@
                                 <div class="hello_slid">
                                     <div class="slid_item xs-text-center">
                                         <div class="col-sm-4">
-                                            <img src="assets/images/hello-phone.png" alt="" />
+                                            <img src="assets/images/tas.png" alt="" />
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="home_text xs-m-top-30">
@@ -291,7 +291,7 @@
                             <div class="col-md-7">
                                 <div class="business_item">
                                     <div class="business_img">
-                                        <img src="assets/images/business-img.png" alt="" />
+                                        <img src="assets/images/barang.png" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -581,7 +581,7 @@
                                         <div class="col-md-8 col-md-offset-2">
                                             <div class="test_item fix">
                                                 <div class="test_img fix">
-                                                    <img class="img-circle" src="assets/images/test-img1.jpg" alt="" />
+                                                    <img class="img-circle" src="assets/images/client.png" alt="" />
                                                 </div>
 
                                                 <div class="test_text text-white">
@@ -598,7 +598,7 @@
                                         <div class="col-md-8 col-md-offset-2">
                                             <div class="test_item fix">
                                                 <div class="test_img fix">
-                                                    <img class="img-circle" src="assets/images/test-img1.jpg" alt="" />
+                                                    <img class="img-circle" src="assets/images/client.png" alt="" />
                                                 </div>
 
                                                 <div class="test_text text-white">
@@ -615,7 +615,7 @@
                                         <div class="col-md-8 col-md-offset-2">
                                             <div class="test_item fix">
                                                 <div class="test_img fix">
-                                                    <img class="img-circle" src="assets/images/test-img1.jpg" alt="" />
+                                                    <img class="img-circle" src="assets/images/client.png" alt="" />
                                                 </div>
 
                                                 <div class="test_text text-white">
@@ -744,7 +744,7 @@
 
                                     </form>
                                     <div class="widget_brand m-top-40">
-                                        <a href="" class="text-uppercase">Your Logo</a>
+                                        <img src="assets/images/Keranjaa.png" class="logo" alt="">
                                         <p>Lorem ipsum dolor sit amet consec tetur 
                                             adipiscing elit nulla aliquet pretium nisi in</p>
                                     </div>
